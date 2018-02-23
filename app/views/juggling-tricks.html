@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="#">Back</a>
+
+      <form class="form" action="check-your-answers" method="post">
+
+        <div class="form-group">
+
+
+        <label class="form-label" for="textarea">
+        <h1 class="heading-large">What is your most impressive juggling trick?</h1>
+        </label>
+        <textarea class="form-control form-control-3-4" name="juggling-tricks" id="juggling-tricks" rows="5">{{ data ['juggling-tricks']}}</textarea>
+</div>
+
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
